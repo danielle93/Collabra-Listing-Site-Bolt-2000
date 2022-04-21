@@ -194,6 +194,7 @@ textarea {
   top: 50%;
   position: fixed;
   right: -45px;
+  height: 49px;
 }
 
 .hero-gallery img {
@@ -257,24 +258,78 @@ textarea {
   padding-left: 3px;
 }
 
-@media screen and (max-width: 767px) {
-  .overview {
-    margin-left: 0 !important;
-    margin-top: 3em !important;
+@media screen and (max-width: 390px) {
+  .hero .contact-btn {
+    position: fixed;
+    right: -320px;
+    top: 42%;
+    height: 49px;
+  }
+
+  .img-container {
+    max-height: 80px !important;
+  }
+}
+@media screen and (min-width: 900px) {
+  .img-container {
+    max-height: 175px !important;
+  }
+}
+@media screen and (min-width: 980px) {
+  .img-container {
+    max-height: 225px !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .img-container {
+    max-height: 350px !important;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .img-container {
+    max-height: 450px !important;
   }
 }
 @media screen and (max-width: 600px) {
+  #toggle label {
+    transition: ease all 500ms;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  #toggle label h4 {
+    font-size: 16px;
+  }
+
+  #toggle {
+    display: block;
+  }
+
+  .attachment {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .section iframe {
+    height: 300px !important;
+  }
+
   html {
     margin: 0 15px;
   }
 
   .hero .contact-btn {
-    top: 10px;
+    top: 42%;
     position: fixed;
-    right: -420px;
+    font-size: 12px;
+    bottom: 50px;
+    height: 49px;
+    width: 155px;
+    right: -47px;
   }
 
-  .property-details .py-5 {
+  .de-details .py-5 {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
@@ -284,11 +339,7 @@ textarea {
     flex-wrap: wrap;
   }
   section.gallery .img-container {
-    width: 100% !important;
-    height: 265px;
-    overflow: hidden !important;
-    transform: none;
-    margin: 5px;
+    max-height: 80px;
   }
   section.gallery .img-container:hover > img {
     transform: scale(1.2);
@@ -311,6 +362,7 @@ textarea {
   .hero .contact-btn {
     font-size: 12px;
     bottom: 50px;
+    height: 49px;
   }
 
   .hero-info {
@@ -450,7 +502,7 @@ textarea {
   width: 100%;
   text-align: center;
   background-size: 12px 12px;
-  border-bottom: 0.5px solid gray;
+  border-bottom: 0.5px solid #000;
 }
 .property-details p {
   font-weight: 300;
@@ -461,8 +513,8 @@ textarea {
 }
 .property-details svg {
   height: 40px;
-  fill: gray;
-  stroke: gray;
+  fill: #000;
+  stroke: #000;
   stroke-width: 0.5;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -501,6 +553,9 @@ textarea {
 
 #PropertyDescription {
   padding: 3.5em 0;
+}
+#PropertyDescription .attachment {
+  margin-right: 20px;
 }
 #PropertyDescription .overview {
   margin-left: 3em;
@@ -595,6 +650,10 @@ textarea {
 .property-description p {
   min-height: 300px;
   height: 300px;
+}
+
+.property-details p {
+  justify-content: left;
 }
 
 /* ============= Property Description ============= */
@@ -780,6 +839,12 @@ textarea {
   }
 }
 /* ============= Amenities ============= */
+#Amenities {
+  height: 1px;
+  position: relative;
+  bottom: 80px;
+}
+
 .amenities {
   font-size: 25px;
   font-weight: 300;
@@ -842,11 +907,12 @@ section.gallery {
   flex-wrap: wrap;
 }
 section.gallery .img-container {
-  width: 354px;
-  height: 265px;
   overflow: hidden !important;
   transform: none;
-  margin: 5px;
+  justify-content: space-between;
+  width: 32%;
+  max-height: 125px;
+  padding: 2.5px;
 }
 section.gallery .img-container:hover > img {
   transform: scale(1.2);
@@ -973,12 +1039,11 @@ section.gallery .img-container img {
   text-align: center;
   margin: 1em auto;
   margin-top: 3em;
-  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 500;
   display: flex;
   justify-content: space-between;
-  color: #bababa;
+  color: #000;
 }
 
 #toggle label {
@@ -1313,11 +1378,12 @@ textarea:focus {
 }
 #PropertyDetails .content .property-details-full {
   color: #000;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
 }
 #PropertyDetails .content .property-details-full .propertyItemName {
   font-weight: 700;
+  font-size: 16px;
 }
 
 @media (min-width: 769px) {
@@ -6394,7 +6460,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.55);
+  color: black;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
