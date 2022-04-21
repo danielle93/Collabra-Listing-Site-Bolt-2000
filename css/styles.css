@@ -1062,7 +1062,7 @@ section.gallery .img-container img {
 
 #toggle {
   font-family: lato, Helvetica, sans-serif;
-  max-width: 800px;
+  max-width: 90vw;
   text-align: center;
   margin: 1em auto;
   margin-top: 3em;
@@ -1113,7 +1113,7 @@ section.gallery .img-container img {
 }
 
 .section img {
-  max-height: 600px;
+  width: 50vw;
 }
 
 .one {
