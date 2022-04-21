@@ -264,6 +264,10 @@ textarea {
   }
 }
 @media screen and (max-width: 600px) {
+  html {
+    margin: 0 15px;
+  }
+
   .hero .contact-btn {
     top: 10px;
     position: fixed;
@@ -325,10 +329,18 @@ textarea {
     flex-wrap: wrap;
   }
 
+  .hero-info .listing-address {
+    padding-left: 0.5em;
+  }
+
   .listing-address .street {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px !important;
+  }
+
+  .hero-info .listing-address p {
+    bottom: 5px;
   }
 
   .listing-address .city {
