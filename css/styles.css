@@ -257,7 +257,7 @@ textarea {
   padding-left: 3px;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 767px) {
   .overview {
     margin-left: 0 !important;
     margin-top: 3em !important;
