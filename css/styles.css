@@ -768,6 +768,7 @@ textarea {
   font-weight: 300;
   margin: 3em auto !important;
   margin-top: 1.5em !important;
+  text-align: center;
 }
 
 /* ============= Property Location ============= */
