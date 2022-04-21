@@ -258,26 +258,33 @@ textarea {
   padding-left: 3px;
 }
 
-@media screen and (max-width: 390px) {
-  .hero .contact-btn {
-    position: fixed;
-    right: -320px;
-    top: 42%;
-    height: 49px;
-  }
-
-  .img-container {
-    max-height: 80px !important;
-  }
-}
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 601px) and (max-width: 768px) {
   .img-container {
     max-height: 175px !important;
+    width: 31.4% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .img-container {
+    max-height: 175px !important;
+    width: 31.4% !important;
+  }
+}
+@media screen and (min-width: 920px) {
+  .img-container {
+    max-height: 225px !important;
   }
 }
 @media screen and (min-width: 980px) {
   .img-container {
     max-height: 225px !important;
+    width: 31.4% !important;
+  }
+}
+@media screen and (min-width: 1208px) and (max-width: 1308px) {
+  .img-container {
+    max-height: 300px !important;
+    width: 31.4% !important;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -293,6 +300,20 @@ textarea {
 @media screen and (min-width: 2000px) {
   .img-container {
     max-height: 450px !important;
+    width: 24.4% !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hero .contact-btn {
+    position: fixed;
+    right: -320px;
+    top: 42%;
+    height: 49px;
+  }
+
+  .img-container {
+    max-height: 100px !important;
+    width: 46.9% !important;
   }
 }
 @media screen and (max-width: 600px) {
@@ -345,6 +366,7 @@ textarea {
   }
   section.gallery .img-container {
     max-height: 80px;
+    width: 46.9% !important;
   }
   section.gallery .img-container:hover > img {
     transform: scale(1.2);
@@ -915,9 +937,9 @@ section.gallery .img-container {
   overflow: hidden !important;
   transform: none;
   justify-content: space-between;
-  width: 32%;
+  width: 24.6%;
   max-height: 125px;
-  padding: 2.5px;
+  margin: 5px;
 }
 section.gallery .img-container:hover > img {
   transform: scale(1.2);
