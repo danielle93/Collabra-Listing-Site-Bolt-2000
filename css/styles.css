@@ -1069,7 +1069,7 @@ section.gallery .img-container img {
   text-transform: uppercase;
   font-weight: 500;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   color: #000;
 }
 
